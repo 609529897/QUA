@@ -2,7 +2,7 @@ import React, { Component, lazy, Suspense } from "react";
 import { Route, NavLink } from "react-router-dom";
 
 import Home from './home'
-const QuaStoreDemo = lazy(() => import("./quaStore"));
+const QuaStoreDemo = lazy(() => import("./quaStore"))
 
 class Layout extends Component {
   constructor(props) {
@@ -40,14 +40,15 @@ class Layout extends Component {
               <span className="nav-icon">
                 {/* <Icon type="right" /> */}
               </span>
-              CooStore 组件
+              QuaStore 组件
             </NavLink>
           </div>
         </div>
         <div className="content">
-          <Suspense fallback={<div className="loading">Loading...</div>}></Suspense>
+          <Suspense fallback={<div className="loading">Loading...</div>}>
           <Route path="/" component={Home} exact/>
           <Route path="/quastore" component={QuaStoreDemo} />
+          </Suspense>
         </div>
       </div>
     )

@@ -10,10 +10,12 @@ class Index extends Component{
   }
 
   componentDidMount () {
-    this.unsubscribe = quaStore.subscribe('level2_3', this.setCount.bind(this));
+    this.unsubscribe = quaStore.subscribe('level2_3', this.setCount.bind(this))
   }
 
-  componentWillMount () {
+  componentWillUnmount () {
+    console.log(this.unsubscribe())
+    console.log(555)
     this.unsubscribe()
   }
 

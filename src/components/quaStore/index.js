@@ -7,8 +7,8 @@ let observer = function () {
     }
     listeners[name].push(listener)
     return () => {
-      const index = listeners[name].indexOf(listener)
-      listeners[name].splice(index, 1)
+        const index = listeners[name].indexOf(listener)
+        listeners[name].splice(index, 1)
     }
   }
   // 通知事件

@@ -1,24 +1,39 @@
-import './index.scss'
-import React, { Component } from 'react'
+import "./index.scss";
+import React, { Component } from "react";
 
 class Index extends Component {
   constructor(props) {
-    super(props)
-    this.state = {}
+    super(props);
+    this.state = {};
   }
   render() {
     return (
       <div className="demo demo--home">
         <h1 className="demo-title">QUA</h1>
         <div className="demo-description">
-          <p>一个简单的组件库</p>
-          <p>Icon：<a href="https://material.io/tools/icons/?style=baseline" rel="noopener noreferrer" target="_blank">Material Icons</a></p>
-          <div />
-          <p>动画实现：<a href="https://github.com/reactjs/react-transition-group" rel="noopener noreferrer" target="_blank">react-transition-group</a></p>
+          <h2>一个简单的 React 组件库</h2>
+          <h4>
+            Icon：<a
+              href="https://material.io/tools/icons/?style=baseline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Material Icons
+            </a>
+          </h4>
+          <h4>
+            动画实现：<a
+              href="https://github.com/reactjs/react-transition-group"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              react-transition-group
+            </a>
+          </h4>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Index
+export default Index;
