@@ -1,5 +1,5 @@
-import React, { Component, lazy, Suspense } from "react";
-import { Route, NavLink } from "react-router-dom";
+import React, { Component, lazy, Suspense } from "react"
+import { Route, NavLink } from "react-router-dom"
 
 import Home from './home'
 const QuaStoreDemo = lazy(() => import("./quaStore"))
@@ -7,7 +7,7 @@ const QuaStoreDemo = lazy(() => import("./quaStore"))
 class Layout extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {}
   }
 
   render() {
@@ -46,8 +46,8 @@ class Layout extends Component {
         </div>
         <div className="content">
           <Suspense fallback={<div className="loading">Loading...</div>}>
-          <Route path="/" component={Home} exact/>
-          <Route path="/quastore" component={QuaStoreDemo} />
+            <Route path="/" component={Home} exact />
+            <Route path="/quastore" component={QuaStoreDemo} />
           </Suspense>
         </div>
       </div>
