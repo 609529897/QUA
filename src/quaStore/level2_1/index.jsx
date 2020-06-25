@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { quaStore } from '../../components'
+import { QuaStore } from '../../components'
 
 class Index extends Component {
   constructor (props) {
@@ -7,11 +7,11 @@ class Index extends Component {
     this.state={}
   }
   notifyLevel2_2() {
-    quaStore.notify('level2_2')
+    QuaStore.notify('level2_2')
   }
 
   notifyLevel2_3 () {
-   quaStore.notify('level2_3');
+    QuaStore.notify('level2_3');
 }
 
   render() {

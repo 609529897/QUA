@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { quaStore } from '../../components/index'
+import { QuaStore } from '../../components/index'
 
 class Index extends Component{
   constructor(props) {
@@ -10,7 +10,7 @@ class Index extends Component{
   }
 
   componentDidMount () {
-    this.unsubscribe = quaStore.subscribe('level2_3', this.setCount.bind(this))
+    this.unsubscribe = QuaStore.subscribe('level2_3', this.setCount.bind(this))
   }
 
   componentWillUnmount () {

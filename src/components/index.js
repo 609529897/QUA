@@ -1,4 +1,5 @@
 import './styles/index.scss'
-import quaStore from './quaStore';
+import QuaStore from './quaStore'
+import Lazyimg from './lazyimg'
 
-export { quaStore }
+export { QuaStore, Lazyimg }

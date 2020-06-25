@@ -86,7 +86,6 @@ export default class Index extends Component {
      width={350}
      thumb="https://i0.hdslb.com/bfs/article/0c8a6760b9683dcfe790b09ea676bf6192aa5c5f.jpg@718w_392h.webp"
      src="https://i0.hdslb.com/bfs/article/b6aad2cd5c988c40ebfa705c4c1f9e583df44d09.gif" />
-// 不主动加载图片，auto属性true，自动加载图片
 <Lazyimg 
      height={188}
      width={350}

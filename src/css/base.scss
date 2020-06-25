@@ -48,8 +48,8 @@ html, body, #root{
     height: 79px;
     line-height: 79px;
     border-bottom: 1px solid rgb(228, 228, 228);
-    color: rgb(0, 132, 137);
-    font-size: 20px;
+    color: #56c1ab;
+    font-size: 25px;
     padding-left: 20px;
 }
 
@@ -85,9 +85,9 @@ html, body, #root{
         }
         &--active{
             background-color: #e8f0fe;
-            color: rgb(0, 132, 137);
+            color: #56c1ab;
             .nav-icon{
-                color: rgb(0, 132, 137);
+                color: #56c1ab;
             }
         }
         &:hover{
@@ -114,7 +114,7 @@ html, body, #root{
 .demo{
     margin: 30px;
     a{
-        color: rgb(0, 132, 137);
+        color: #56c1ab;
         text-decoration: underline;
     }
     &-title{

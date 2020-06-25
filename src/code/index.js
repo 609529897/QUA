@@ -5,7 +5,7 @@ import theme from "prism-react-renderer/themes/nightOwl"
 
 const styles = {
   root: {
-    maxWidth: "35vw",
+    maxWidth: "45vw",
     lineHeight: "1.3rem",
     boxSizing: "border-box",
     fontFamily: '"Dank Mono", "Fira Code", monospace',
