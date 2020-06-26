@@ -10,11 +10,11 @@ class Icon extends Component {
 
     render () {
         const iconClassName = className({
-            'cooIcon': true,
-            [`cooIcon-${this.props.type}`]: true
+            'quaIcon': true,
+            [`quaIcon-${this.props.type}`]: true
         })
         return (
-            <i className={iconClassName} />
+            <span className={iconClassName} />
         )
     }
 }
