@@ -1,4 +1,4 @@
-.cooPlacebo{
+.quaPlacebo{
     position: fixed;
     top: 0;
     right: 0;
@@ -7,14 +7,14 @@
     z-index: 1001;
     background-color: rgba(165, 165, 165, .2);
     transition: opacity .5s ease;
-    animation: cooFadeIn .5s ease;
+    animation: quaFadeIn .5s ease;
     &-progress{
         position: absolute;
         top: 0;
         height: 3px;
         width: 25%;
         transform-origin: 0 0;
-        animation: cooPlaceboLoading 1.5s infinite;
+        animation: quaPlaceboLoading 1.5s infinite;
         animation-timing-function: cubic-bezier(0.4,0.0,1,1);
         animation-delay: .1s;
         transform: scaleX(0);
@@ -25,7 +25,7 @@
     }
 }
 
-@keyframes cooPlaceboLoading {
+@keyframes quaPlaceboLoading {
     0% {
         transform: scaleX(0)
     }

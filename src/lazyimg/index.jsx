@@ -97,12 +97,16 @@ export default class Index extends Component {
         </div>
         <div className="panel">
           <h2 className="panel-title">属性</h2>
-          <div className="panel-content demo-description">
-            <p key="1">height: 图片高度</p>
-            <p key="2">width: 图片宽度</p>
-            <p key="3">thumb: 预加载图片</p>
-            <p key="4">src: 完整图片</p>
-            <p key="5">auto: 是否自动加载</p>
+          <div className="panel-content">
+            <p key="1"><strong>height</strong> 图片高度</p>
+            <br />
+            <p key="2"><strong>width</strong> 图片宽度</p>
+            <br />
+            <p key="3"><strong>thumb</strong> 预加载图片</p>
+            <br />
+            <p key="4"><strong>src</strong> 完整图片</p>
+            <br />
+            <p key="5"><strong>auto</strong> 是否自动加载</p>
           </div>
         </div>
       </div>

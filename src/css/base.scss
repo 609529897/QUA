@@ -3,11 +3,10 @@
 html, body{
     background: transparent;
     -webkit-overflow-scrolling: touch;
-
 }
 
 body {
-    font-family: Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
+    font-family: Muli, Circular, PingFang-SC, "Hiragino Sans GB", 微软雅黑, "Microsoft YaHei", "Heiti SC" !important;
     font-size: 13px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -85,6 +84,8 @@ html, body, #root{
         }
         &--active{
             background-color: #e8f0fe;
+            box-shadow:  10px 10px 80px #d1d9e6,
+             -10px -10px 80px #d1d9e6;
             color: #56c1ab;
             .nav-icon{
                 color: #56c1ab;

@@ -3,7 +3,8 @@ import { Route, NavLink } from "react-router-dom"
 
 import Home from './home'
 const QuaStoreDemo = lazy(() => import('./quaStore'))
-const LazyimgDemo = lazy(() => import('./lazyimg')) 
+const LazyimgDemo = lazy(() => import('./lazyimg'))
+const PlaceboDemo = lazy(() => import('./placebo'))
 
 class Layout extends Component {
   constructor(props) {
@@ -57,12 +58,26 @@ class Layout extends Component {
               Lazyimg 组件
             </NavLink>
           </div>
+          <div className="nav-item">
+            <NavLink
+              to="/placebo"
+              className="nav-link"
+              activeClassName="nav-link--active"
+              exact
+            >
+              <span className="nav-icon">
+                {/* <Icon type="right" /> */}
+              </span>
+              Placebo 组件
+            </NavLink>
+          </div>
         </div>
         <div className="content">
           <Suspense fallback={<div className="loading">Loading...</div>}>
             <Route path="/" component={Home} exact />
             <Route path="/quastore" component={QuaStoreDemo} />
             <Route path="/lazyimg" component={LazyimgDemo} />
+            <Route path="/placebo" component={PlaceboDemo} />
           </Suspense>
         </div>
       </div>

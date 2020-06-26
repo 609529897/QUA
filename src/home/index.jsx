@@ -11,7 +11,7 @@ class Index extends Component {
       <div className="demo demo--home">
         <h1 className="demo-title">QUA</h1>
         <div className="demo-description">
-          <h2>一个简单的 React 组件库</h2>
+          <h2>一个 React 组件库</h2>
           <h4>
             Icon：<a
               href="https://material.io/tools/icons/?style=baseline"
