@@ -1,10 +1,12 @@
 import React, { Component, lazy, Suspense } from "react"
 import { Route, NavLink } from "react-router-dom"
+import { Icon } from './components'
 
 import Home from './home'
 const QuaStoreDemo = lazy(() => import('./quaStore'))
 const LazyimgDemo = lazy(() => import('./lazyimg'))
 const PlaceboDemo = lazy(() => import('./placebo'))
+const IconDemo = lazy(() => import('./icon'))
 
 class Layout extends Component {
   constructor(props) {
@@ -27,7 +29,7 @@ class Layout extends Component {
               exact
             >
               <span className="nav-icon">
-                {/* <Icon type="home" /> */}
+                <Icon type="home" />
               </span>
               首页
             </NavLink>
@@ -40,9 +42,9 @@ class Layout extends Component {
               exact
             >
               <span className="nav-icon">
-                {/* <Icon type="right" /> */}
+                <Icon type="right" />
               </span>
-              QuaStore 组件
+              QuaStore
             </NavLink>
           </div>
           <div className="nav-item">
@@ -53,9 +55,9 @@ class Layout extends Component {
               exact
             >
               <span className="nav-icon">
-                {/* <Icon type="right" /> */}
+                <Icon type="right" />
               </span>
-              Lazyimg 组件
+              Lazyimg
             </NavLink>
           </div>
           <div className="nav-item">
@@ -66,9 +68,22 @@ class Layout extends Component {
               exact
             >
               <span className="nav-icon">
-                {/* <Icon type="right" /> */}
+                <Icon type="right" />
               </span>
-              Placebo 组件
+              Placebo
+            </NavLink>
+          </div>
+          <div className="nav-item">
+            <NavLink
+              to="/icon"
+              className="nav-link"
+              activeClassName="nav-link--active"
+              exact
+            >
+              <span className="nav-icon">
+                <Icon type="right" />
+              </span>
+              Icon
             </NavLink>
           </div>
         </div>
@@ -78,6 +93,7 @@ class Layout extends Component {
             <Route path="/quastore" component={QuaStoreDemo} />
             <Route path="/lazyimg" component={LazyimgDemo} />
             <Route path="/placebo" component={PlaceboDemo} />
+            <Route path="/icon" component={IconDemo} />
           </Suspense>
         </div>
       </div>

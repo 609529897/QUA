@@ -12,6 +12,7 @@ class Index extends Component {
         <h1 className="demo-title">QUA</h1>
         <div className="demo-description">
           <h2>一个 React 组件库</h2>
+          <br />
           <h4>
             Icon：<a
               href="https://material.io/tools/icons/?style=baseline"
@@ -21,6 +22,7 @@ class Index extends Component {
               Material Icons
             </a>
           </h4>
+          <br />
           <h4>
             动画实现：<a
               href="https://github.com/reactjs/react-transition-group"

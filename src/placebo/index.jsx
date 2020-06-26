@@ -22,7 +22,7 @@ export default class Index extends Component {
             <div className="panel-line">
               <button className="clickButton"
                 onClick={() => {
-                  Placebo.open({ fillColor: '255, 0, 0' });
+                  Placebo.open({ fillColor: '255, 0, 0' })
                   setTimeout(() => {
                     Placebo.close()
                   }, 3000)
