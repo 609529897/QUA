@@ -21,6 +21,7 @@ export default class Index extends Component {
           <div className="panel-content">
             <div className="panel-line">
               <Button
+                type="danger"
                 onClick={() => {
                   Placebo.open({ fillColor: "255, 0, 0" });
                   setTimeout(() => {
@@ -31,7 +32,6 @@ export default class Index extends Component {
                 3秒钟红色的安慰
               </Button>
               <Button
-              type="danger"
                 onClick={() => {
                   Placebo.open();
                   setTimeout(() => {

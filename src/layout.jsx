@@ -46,7 +46,7 @@ class Layout extends Component {
               <span className="nav-icon">
                 <Icon type="right" />
               </span>
-              QuaStore
+              QuaStore 通信
             </NavLink>
           </div>
           <div className="nav-item">
@@ -59,7 +59,7 @@ class Layout extends Component {
               <span className="nav-icon">
                 <Icon type="right" />
               </span>
-              Lazyimg
+              Lazyimg 懒加载
             </NavLink>
           </div>
           <div className="nav-item">
@@ -72,7 +72,7 @@ class Layout extends Component {
               <span className="nav-icon">
                 <Icon type="right" />
               </span>
-              Placebo
+              Placebo 安慰剂
             </NavLink>
           </div>
           <div className="nav-item">
@@ -85,7 +85,7 @@ class Layout extends Component {
               <span className="nav-icon">
                 <Icon type="right" />
               </span>
-              Icon
+              Icon 图标
             </NavLink>
           </div>
           <div className="nav-item">
@@ -98,7 +98,7 @@ class Layout extends Component {
               <span className="nav-icon">
                 <Icon type="right" />
               </span>
-              Button
+              Button 按钮
             </NavLink>
           </div>
           <div className="nav-item">
@@ -111,7 +111,7 @@ class Layout extends Component {
               <span className="nav-icon">
                 <Icon type="right" />
               </span>
-              Switch
+              Switch 开关
             </NavLink>
           </div>
         </div>
