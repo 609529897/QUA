@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./index.scss";
 import Code from "../code";
-import { Lazyimg } from "../components";
+import { Lazyimg, Button } from "../components";
 import staticImg from '../images/static.webp';
 import interchangeImg from '../images/interchange.gif';
 import clearImg from '../images/clear.webp'
@@ -58,8 +58,7 @@ export default class Index extends Component {
                 src="https://i0.hdslb.com/bfs/article/77.webp"
               />
             </div>
-            <button
-              className="clickButton"
+            <Button
               onClick={() => {
                 this.setState({
                   auto01: true,
@@ -67,17 +66,16 @@ export default class Index extends Component {
               }}
             >
               加载第一张
-            </button>
-            <button
-              className="clickButton"
+            </Button>
+            <Button
               onClick={() => {
                 this.setState({
                   auto02: true,
                 });
               }}
             >
-              加载第二张(不存在的图片)
-            </button>
+              加载第二张(失效的图片)
+            </Button>
           </div>
         </div>
         <div className="panel">

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { QuaStore } from "../../components";
+import { QuaStore, Button } from "../../components";
 
 class Index extends Component {
   constructor(props) {
@@ -18,18 +18,16 @@ class Index extends Component {
     return (
       <div className="level">
         <div className="level-name">第二层：2-1</div>
-        <button
-          className="clickButton"
+        <Button
           onClick={this.notifyLevel2_2.bind(this)}
         >
           通知【第二层:2-2】数据变化了
-        </button>
-        <button
-          className="clickButton"
+        </Button>
+        <Button
           onClick={this.notifyLevel2_3.bind(this)}
         >
           通知【第二层:2-3】数据变化了
-        </button>
+        </Button>
       </div>
     );
   }

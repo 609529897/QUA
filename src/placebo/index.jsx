@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./index.scss";
 import Code from "../code";
-import { Placebo } from "../components";
+import { Placebo, Button } from "../components";
 
 export default class Index extends Component {
   constructor(props) {
@@ -20,8 +20,7 @@ export default class Index extends Component {
           <h2 className="panel-title">演示</h2>
           <div className="panel-content">
             <div className="panel-line">
-              <button
-                className="clickButton"
+              <Button
                 onClick={() => {
                   Placebo.open({ fillColor: "255, 0, 0" });
                   setTimeout(() => {
@@ -30,10 +29,9 @@ export default class Index extends Component {
                 }}
               >
                 3秒钟红色的安慰
-              </button>
-              <button
-                type="normal"
-                className="clickButton"
+              </Button>
+              <Button
+              type="danger"
                 onClick={() => {
                   Placebo.open();
                   setTimeout(() => {
@@ -42,7 +40,7 @@ export default class Index extends Component {
                 }}
               >
                 5秒钟蓝色的安慰
-              </button>
+              </Button>
             </div>
             <div className="panel-line">
             </div>
