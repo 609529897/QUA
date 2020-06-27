@@ -47,7 +47,7 @@ html, body, #root{
     height: 79px;
     line-height: 79px;
     border-bottom: 1px solid rgb(228, 228, 228);
-    color: #56c1ab;
+    color: #1890ff;
     font-size: 25px;
     padding-left: 20px;
 }
@@ -81,9 +81,9 @@ html, body, #root{
         }
         &--active{
             background-color: #e8f0fe;
-            color: #56c1ab;
+            color: #1890ff;
             .nav-icon{
-                color: #56c1ab;
+                color: #1890ff;
             }
         }
     }
@@ -107,7 +107,8 @@ html, body, #root{
 .demo{
     margin: 30px;
     a{
-        color: #56c1ab;
+        font-size: 1rem;
+        color: #1890ff;
         text-decoration: underline;
     }
     &-title{
