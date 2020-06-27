@@ -1,17 +1,19 @@
-import React, { Component, lazy, Suspense } from "react"
-import { Route, NavLink } from "react-router-dom"
-import { Icon } from './components'
+import React, { Component, lazy, Suspense } from "react";
+import { Route, NavLink } from "react-router-dom";
+import { Icon } from "./components";
 
-import Home from './home'
-const QuaStoreDemo = lazy(() => import('./quaStore'))
-const LazyimgDemo = lazy(() => import('./lazyimg'))
-const PlaceboDemo = lazy(() => import('./placebo'))
-const IconDemo = lazy(() => import('./icon'))
+import Home from "./home";
+const QuaStoreDemo = lazy(() => import("./quaStore"));
+const LazyimgDemo = lazy(() => import("./lazyimg"));
+const PlaceboDemo = lazy(() => import("./placebo"));
+const IconDemo = lazy(() => import("./icon"));
+const ButtonDemo = lazy(() => import("./button"));
+const SwitchDemo = lazy(() => import("./switch"));
 
 class Layout extends Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {};
   }
 
   render() {
@@ -86,6 +88,32 @@ class Layout extends Component {
               Icon
             </NavLink>
           </div>
+          <div className="nav-item">
+            <NavLink
+              to="/button"
+              className="nav-link"
+              activeClassName="nav-link--active"
+              exact
+            >
+              <span className="nav-icon">
+                <Icon type="right" />
+              </span>
+              Button
+            </NavLink>
+          </div>
+          <div className="nav-item">
+            <NavLink
+              to="/switch"
+              className="nav-link"
+              activeClassName="nav-link--active"
+              exact
+            >
+              <span className="nav-icon">
+                <Icon type="right" />
+              </span>
+              Switch
+            </NavLink>
+          </div>
         </div>
         <div className="content">
           <Suspense fallback={<div className="loading">Loading...</div>}>
@@ -94,11 +122,13 @@ class Layout extends Component {
             <Route path="/lazyimg" component={LazyimgDemo} />
             <Route path="/placebo" component={PlaceboDemo} />
             <Route path="/icon" component={IconDemo} />
+            <Route path="/button" component={ButtonDemo} />
+            <Route path="/switch" component={SwitchDemo} />
           </Suspense>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Layout
+export default Layout;

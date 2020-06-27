@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
-import './index.scss'
-import Code from '../code'
-import { Placebo } from '../components'
+import React, { Component } from "react";
+import "./index.scss";
+import Code from "../code";
+import { Placebo } from "../components";
 
 export default class Index extends Component {
   constructor(props) {
-    super(props)
-    this.state = {}
+    super(props);
+    this.state = {};
   }
 
   render() {
@@ -14,29 +14,37 @@ export default class Index extends Component {
       <div className="demo demo--placebo">
         <h1 className="demo-title">Placebo 组件</h1>
         <div className="demo-description">
-        当页面加载很久时 Placebo 组件需要安慰用户，不要着急正在努力的加载哦。
-                </div>
+          当页面加载很久时 Placebo 组件需要安慰用户，不要着急正在努力的加载哦。
+        </div>
         <div className="panel">
           <h2 className="panel-title">演示</h2>
           <div className="panel-content">
             <div className="panel-line">
-              <button className="clickButton"
+              <button
+                className="clickButton"
                 onClick={() => {
-                  Placebo.open({ fillColor: '255, 0, 0' })
+                  Placebo.open({ fillColor: "255, 0, 0" });
                   setTimeout(() => {
-                    Placebo.close()
-                  }, 3000)
-                }}>3秒钟红色的安慰</button>
-              <button type="normal" className="clickButton"
+                    Placebo.close();
+                  }, 3000);
+                }}
+              >
+                3秒钟红色的安慰
+              </button>
+              <button
+                type="normal"
+                className="clickButton"
                 onClick={() => {
-                  Placebo.open()
+                  Placebo.open();
                   setTimeout(() => {
-                    Placebo.close()
+                    Placebo.close();
                   }, 5000);
-                }}>5秒钟蓝色的安慰</button>
+                }}
+              >
+                5秒钟蓝色的安慰
+              </button>
             </div>
             <div className="panel-line">
-
             </div>
           </div>
         </div>
@@ -44,14 +52,12 @@ export default class Index extends Component {
           <h2 className="panel-title">示例代码</h2>
           <div className="panel-content">
             <Code>
-              {
-                `<button type="normal" onClick={() => {
+              {`<button type="normal" onClick={() => {
     Placebo.open({ fillColor: '255, 0, 0' })
     setTimeout(() => {
         Placebo.close()
     }, 3000)
-}}></button>`
-              }
+}}></button>`}
             </Code>
           </div>
         </div>
@@ -66,10 +72,13 @@ export default class Index extends Component {
         <div className="panel">
           <h2 className="panel-title">属性</h2>
           <div className="panel-content">
-            <p><strong>fillColor</strong> 给 open 函数传递一个对象，对象属性 fillColor 代表安慰剂颜色。默认颜色是蓝色！</p>
+            <p>
+              <strong>fillColor</strong>
+              给 open 函数传递一个对象，对象属性 fillColor 代表安慰剂颜色。默认颜色是蓝色！
+            </p>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

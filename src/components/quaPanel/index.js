@@ -1,10 +1,10 @@
-import React,{ Component, createRef } from 'react'
+import React, { Component, createRef } from 'react'
 import { createPortal } from 'react'
 import propTypes from 'prop-types'
 import className from 'classnames'
 import { CSSTransition } from 'react-transition-group'
 
-class QuaPanel extends Component{
+class QuaPanel extends Component {
   constructor(props) {
     super(props)
     this.el = document.createElement('div')
@@ -19,12 +19,12 @@ class QuaPanel extends Component{
       animating: false,       // 正在处理展开/关闭
     }
   }
-  componentDidMount () {
+  componentDidMount() {
     this.canvasContext = this.canvasRef.current.getContext('2d');
     document.body.appendChild(this.el)
   }
 
-  componentWillMount () {
+  componentWillMount() {
     document.body.removeChild(this.el)
   }
 
@@ -32,7 +32,7 @@ class QuaPanel extends Component{
    * 获取半径
    * 遍历窗体4个坐标与事件触发点的坐标，最大值级半径
    * */
-  
+
 }
 
 export default QuaPanel

@@ -73,7 +73,8 @@ componentWillUnmount () {
           <h2 className="panel-title">属性</h2>
           <div className="panel-content">
             <p key="1">
-              订阅： this.unsubscribe = quaStore.subscribe('状态标识', /*发布对应状态时执行的函数*/)
+              订阅： this.unsubscribe = quaStore.subscribe('状态标识',
+              /*发布对应状态时执行的函数*/)
             </p>
             <br />
             <p key="2">删除订阅： this.unsubscribe()</p>

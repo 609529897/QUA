@@ -68,12 +68,11 @@ class Index extends Component {
           <h2 className="panel-title">属性</h2>
           <div className="panel-content">
             <p key="1">
-              <strong>size</strong> 按钮大小，可选值: small | large | default
+              <strong>size</strong> 大小，可选值: small | large | default
             </p>
             <br />
             <p key="3">
-              <strong>type</strong>
-              按钮类型，可选值: primary | success | normal | danger
+              <strong>type</strong> 类型，可选值: primary | success | normal | danger
             </p>
             <br />
             <p key="2"><strong>disabled</strong> 禁用</p>

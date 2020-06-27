@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import "./index.scss";
 import Code from "../code";
 import { Lazyimg } from "../components";
+import staticImg from '../images/static.webp';
+import interchangeImg from '../images/interchange.gif';
+import clearImg from '../images/clear.webp'
+import fuzzyImg from '../images/fuzzy.webp'
 
 export default class Index extends Component {
   constructor(props) {
@@ -31,8 +35,8 @@ export default class Index extends Component {
               <Lazyimg
                 height={188}
                 width={350}
-                thumb="https://i0.hdslb.com/bfs/article/0c8a6760b9683dcfe790b09ea676bf6192aa5c5f.jpg@718w_392h.webp"
-                src="https://i0.hdslb.com/bfs/article/b6aad2cd5c988c40ebfa705c4c1f9e583df44d09.gif"
+                thumb={staticImg}
+                src={interchangeImg}
               />
             </div>
           </div>
@@ -42,8 +46,8 @@ export default class Index extends Component {
               <Lazyimg
                 height={188}
                 width={350}
-                thumb="https://i0.hdslb.com/bfs/article/428f5b1a19ae5e0a43f2aef11c094ea0c5f5aa58.png@700w_376h.webp"
-                src="https://i0.hdslb.com/bfs/article/2a748f8f2264dfd7b8dcc0d314a179d9622232b2.jpg@700w_376h.webp"
+                thumb={fuzzyImg}
+                src={clearImg}
                 auto={this.state.auto01}
               />
 

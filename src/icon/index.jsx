@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import "./index.scss"
-import Code from "../code"
-import { Icon } from "../components"
+import React, { Component } from "react";
+import "./index.scss";
+import Code from "../code";
+import { Icon } from "../components";
 const ICON_LIST = [
   "loading",
   "home",
@@ -31,12 +31,12 @@ const ICON_LIST = [
   "down",
   "close",
   "add",
-]
+];
 
 export default class Index extends Component {
   constructor(props) {
-    super(props)
-    this.state = {}
+    super(props);
+    this.state = {};
   }
   render() {
     return (
@@ -55,7 +55,7 @@ export default class Index extends Component {
                     <Icon type={item}></Icon>
                     <span className="icon-name">{item}</span>
                   </li>
-                )
+                );
               })}
             </ul>
           </div>
@@ -77,6 +77,6 @@ export default class Index extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

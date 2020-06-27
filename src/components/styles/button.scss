@@ -1,4 +1,4 @@
-.cooButton{
+.quaButton{
     display: inline-block;
     cursor: pointer;
     transition: all .3s ease;
@@ -10,25 +10,25 @@
     background-image: none;
     background-color: transparent;
     font-smoothing: antialiased;
-    .cooIcon-loading{
+    .quaIcon-loading{
         margin-right: 3px;
     }
     &.circle{
         padding: 0px;
     }
-    &.cooButton--fill{
+    &.quaButton--fill{
         color: $white;
     }
     &--normal{
         color: $gray;
-        border-color: rgb(118, 118, 118);
+        border-color: rgb(217, 217, 217);
         &:hover{
             background-color: $grayHover;
         }
         &:active{
             background-color: $grayActive;
         }
-        &.cooButton--fill{
+        &.quaButton--fill{
             background-color: $gray;
             border-color: $gray;
             &:active{
@@ -45,7 +45,7 @@
         &:active{
             background-color: $blueActive;
         }
-        &.cooButton--fill{
+        &.quaButton--fill{
             background-color: $blue;
             border-color: $blue;
             &:active{
@@ -62,7 +62,7 @@
         &:active{
             background-color: $whiteActive;
         }
-        &.cooButton--fill{
+        &.quaButton--fill{
             background-color: $white;
             border-color: $white;
             &:active{
@@ -79,7 +79,7 @@
         &:active{
             background-color: $redActive;
         }
-        &.cooButton--fill{
+        &.quaButton--fill{
             background-color: $red;
             border-color: $red;
             &:active{
@@ -96,7 +96,7 @@
         &:active{
             background-color: $greenActive;
         }
-        &.cooButton--fill{
+        &.quaButton--fill{
             background-color: $green;
             border-color: $green;
             &:active{
@@ -112,34 +112,36 @@
         border-style: solid;
         font-size: 14px;
         border-radius: $borderRadius;
-        .cooIcon{
+        .quaIcon{
             font-size: 16px;
         }
-        &.cooButton--circle{
+        &.quaButton--circle{
             border-radius: 18px;
             width: 36px;
             padding: 6px 0px;
-            .cooIcon{
+            .quaIcon{
                 font-size: 20px;
             }
         }
     }
 
     &--large{
+        border: none;
+        border: 1px solid $blue;
         padding: 10px 22px;
         font-size: 16px;
         line-height: 24px;
-        border-width: 2px;
+        border-width: 1px;
         font-weight: 700;
         border-radius: $borderRadiusLarge;
-        .cooIcon{
+        .quaIcon{
             font-size: 17px;
         }
-        &.cooButton--circle{
+        &.quaButton--circle{
             border-radius: 29px;
             width: 48px;
             padding: 10px 0px;
-            .cooIcon{
+            .quaIcon{
                 font-size: 22px;
             }
         }

@@ -1,7 +1,7 @@
-import React, { Fragment, Component } from "react"
-import Editor from "react-simple-code-editor"
-import Highlight, { defaultProps } from "prism-react-renderer"
-import theme from "prism-react-renderer/themes/nightOwl"
+import React, { Fragment, Component } from "react";
+import Editor from "react-simple-code-editor";
+import Highlight, { defaultProps } from "prism-react-renderer";
+import theme from "prism-react-renderer/themes/nightOwl";
 
 const styles = {
   root: {
@@ -11,14 +11,14 @@ const styles = {
     fontFamily: '"Dank Mono", "Fira Code", monospace',
     ...theme.plain
   }
-}
+};
 
 export default class EditorExample extends Component {
-  state = { code: this.props.children }
+  state = { code: this.props.children };
 
   onValueChange = code => {
-    this.setState({ code })
-  }
+    this.setState({ code });
+  };
 
   highlight = code => (
     <Highlight {...defaultProps} theme={theme} code={code} language="jsx">
@@ -34,7 +34,7 @@ export default class EditorExample extends Component {
         </Fragment>
       )}
     </Highlight>
-  )
+  );
 
   render() {
     return (
@@ -45,6 +45,6 @@ export default class EditorExample extends Component {
         padding={10}
         style={styles.root}
       />
-    )
-  }
-}
+    );
+  };
+};
