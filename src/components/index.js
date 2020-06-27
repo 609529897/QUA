@@ -1,9 +1,7 @@
 import './styles/index.scss'
-import QuaStore from './quaStore'
-import Lazyimg from './lazyimg'
-import Placebo from './placebo'
-import Icon from './icon'
-import Button from './button'
-import Switch from './switch'
-
-export { QuaStore, Lazyimg, Placebo, Icon, Button, Switch }
+export { default as QuaStore} from './quaStore'
+export { default as Lazyimg } from './lazyimg'
+export { default as Placebo} from './placebo'
+export { default as Icon } from './icon'
+export { default as Button} from './button'
+export { default as Switch } from './switch'
