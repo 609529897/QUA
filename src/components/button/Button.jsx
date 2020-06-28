@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import propTypes from "prop-types";
-import classnames from "classnames";
+import className from "classnames";
 import Icon from "../icon";
 
 export default class Button extends Component {
@@ -17,23 +17,22 @@ export default class Button extends Component {
   }
 
   render() {
-    const { type, size, disabled, circle, fill, loading, className } =
-      this.props;
+    const props = this.props;
     const prefixCls = "quaButton";
-    const buttonClassName = classnames({
+    const buttonClassName = className({
       [prefixCls]: true,
-      [`${prefixCls}--${type}`]: true,
-      [`${prefixCls}--${size}`]: true,
-      [`${prefixCls}--disable`]: disabled,
-      [`${prefixCls}--circle`]: circle,
-      [`${prefixCls}--fill`]: fill,
-      [`${prefixCls}--loading`]: loading,
-      [className]: true,
+      [`${prefixCls}--${props.type}`]: true,
+      [`${prefixCls}--${props.size}`]: true,
+      [`${prefixCls}--disable`]: props.disabled,
+      [`${prefixCls}--circle`]: props.circle,
+      [`${prefixCls}--fill`]: props.fill,
+      [`${prefixCls}--loading`]: props.loading,
+      [props.className]: true,
     });
 
     return (
       <button className={buttonClassName} onClick={this.onClick.bind(this)}>
-        {loading ? (<Icon type="loading" />) : null}
+        {props.loading ? (<Icon type="loading" />) : null}
         {this.props.children}
       </button>
     );

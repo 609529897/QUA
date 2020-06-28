@@ -11,7 +11,7 @@ class index extends Component {
   render() {
     return (
       <div className="demo demo--switch">
-        <h1 className="demo-title">Switch 组件</h1>
+        <h1 className="demo-title">Switch 开关组件</h1>
         <div className="demo-description">
           Switch 开关
         </div>

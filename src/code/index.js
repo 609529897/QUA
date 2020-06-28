@@ -13,7 +13,7 @@ const styles = {
   }
 };
 
-export default class EditorExample extends Component {
+class EditorExample extends Component {
   state = { code: this.props.children };
 
   onValueChange = code => {
@@ -48,3 +48,5 @@ export default class EditorExample extends Component {
     );
   };
 };
+
+export default EditorExample;

@@ -3,7 +3,7 @@ import "./index.scss";
 import Code from "../code";
 import { Placebo, Button } from "../components";
 
-export default class Index extends Component {
+class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -12,7 +12,7 @@ export default class Index extends Component {
   render() {
     return (
       <div className="demo demo--placebo">
-        <h1 className="demo-title">Placebo 组件</h1>
+        <h1 className="demo-title">Placebo 安慰剂组件</h1>
         <div className="demo-description">
           当页面加载很久时 Placebo 组件需要安慰用户，不要着急正在努力的加载哦。
         </div>
@@ -79,4 +79,6 @@ export default class Index extends Component {
       </div>
     );
   }
-}
+};
+
+export default Index;

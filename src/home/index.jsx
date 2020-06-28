@@ -14,6 +14,16 @@ class Index extends Component {
           <h2>React 组件库</h2>
           <br />
           <h4>
+            思路和样式：<a
+              href="https://ant.design/index-cn"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Ant Design
+            </a>
+            </h4>
+          <br />
+          <h4>
             Icon：<a
               href="https://material.io/tools/icons/?style=baseline"
               rel="noopener noreferrer"

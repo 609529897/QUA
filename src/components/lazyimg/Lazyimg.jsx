@@ -17,20 +17,20 @@ export default class Lazyimg extends Component {
   }
 
   componentDidMount() {
-    const { thumb, auto } = this.props;
-    const { status } = this.state;
+    const props = this.props;
+    const state = this.state;
     // 预加载图片thumb
-    if ("thumb" in this.props) {
+    if ("thumb" in props) {
       const loadThumb = () => {
-        loadImage([thumb]).then(({ success, error }) => {
-          if (status !== "unloaded") {
+        loadImage([props.thumb]).then(({ success, error }) => {
+          if (state.status !== "unloaded") {
             return;
           }
           if (error === 0) {
             this.setState({
-              src: thumb,
+              src: props.thumb,
             });
-            if (auto) {
+            if (props.auto) {
               this.load();
             }
           }
@@ -38,7 +38,7 @@ export default class Lazyimg extends Component {
       };
       loadThumb();
     } else {
-      if (auto) {
+      if (props.auto) {
         this.load();
       }
     }
@@ -51,15 +51,15 @@ export default class Lazyimg extends Component {
   }
 
   load() {
-    const { src } = this.props;
-    const { status } = this.state;
-    if (status === "loading" || status === "loaded") {
+    const props = this.props;
+    const state = this.state;
+    if (state.status === "loading" || state.status === "loaded") {
       return false;
     }
     this.setState({
       status: "loading",
     });
-    loadImage([src]).then(({ success, error }) => {
+    loadImage([props.src]).then(({ success, error }) => {
       if (error !== 0) {
         this.setState({
           status: "fail",
@@ -67,7 +67,7 @@ export default class Lazyimg extends Component {
       } else {
         this.setState({
           status: "loaded",
-          src: src,
+          src: props.src,
         });
       }
     });
@@ -80,21 +80,21 @@ export default class Lazyimg extends Component {
   }
 
   render() {
-    const { width, height } = this.props;
-    const { src, status, gif, hidden } = this.state;
+    const props = this.props;
+    const state = this.state;
     const iconClassName = className({
       "quaLazyimg-icon": true,
-      [`quaLazyimg-icon--${status}`]: true,
-      "quaLazyimg-icon--gif": gif,
-      "quaLazyimg-icon--photo": !gif,
-      "quaLazyimg-icon--hidden": hidden,
+      [`quaLazyimg-icon--${state.status}`]: true,
+      "quaLazyimg-icon--gif": state.gif,
+      "quaLazyimg-icon--photo": !state.gif,
+      "quaLazyimg-icon--hidden": state.hidden,
     });
     return (
       <span className={className("quaLazyimg")} onClick={this.load.bind(this)}>
         <img
-          src={src}
-          width={width ? width : ""}
-          height={height ? height : ""}
+          src={state.src}
+          width={props.width ? props.width : ""}
+          height={props.height ? props.height : ""}
         />
         <span
           className={iconClassName}

@@ -14,7 +14,7 @@ class Index extends Component {
       <div className="demo demo--button">
         <h1 className="demo-title">Button按钮</h1>
         <div className="demo-description">
-          Button 按钮
+          Button 按钮组件
         </div>
         <div className="panel">
           <h2 className="panel-title">演示</h2>
@@ -87,6 +87,6 @@ class Index extends Component {
       </div>
     );
   }
-}
+};
 
 export default Index;

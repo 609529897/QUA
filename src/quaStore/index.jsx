@@ -1,5 +1,5 @@
-import "./index.scss";
 import React, { Component } from "react";
+import "./index.scss";
 import Code from "../code";
 import Level1_1 from "./level1_1";
 import Level1_2 from "./level1_2";

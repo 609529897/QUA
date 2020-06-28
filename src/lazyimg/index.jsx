@@ -7,7 +7,7 @@ import interchangeImg from '../images/interchange.gif';
 import clearImg from '../images/clear.webp'
 import fuzzyImg from '../images/fuzzy.webp'
 
-export default class Index extends Component {
+class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -114,4 +114,6 @@ export default class Index extends Component {
       </div>
     );
   }
-}
+};
+
+export default  Index;

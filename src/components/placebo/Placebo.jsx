@@ -3,7 +3,7 @@ import propTypes from "prop-types";
 import className from "classnames";
 import { CSSTransition } from "react-transition-group";
 
-export default class Placebo extends Component {
+class Placebo extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -33,18 +33,18 @@ export default class Placebo extends Component {
   }
 
   render() {
-    const { fillColor, hidden, open } = this.state;
+    const state = this.state;
     const progressStyle = {
-      backgroundColor: `rgba(${fillColor} , 1)`,
+      backgroundColor: `rgba(${state.fillColor} , 1)`,
     };
     const placeboClassName = className({
       "quaPlacebo": true,
-      "quaPlacebo--hidden": hidden,
+      "quaPlacebo--hidden": state.hidden,
     });
     return (
       <span>
         <CSSTransition
-          in={open}
+          in={state.open}
           timeout={300}
           onExited={this.onExited.bind(this)}
         >
@@ -63,3 +63,5 @@ export default class Placebo extends Component {
 Placebo.propTypes = {
   fillColor: propTypes.string,
 };
+
+export default Placebo;

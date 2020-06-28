@@ -33,7 +33,7 @@ const ICON_LIST = [
   "add",
 ];
 
-export default class Index extends Component {
+class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -41,7 +41,7 @@ export default class Index extends Component {
   render() {
     return (
       <div className="demo demo--button">
-        <h1 className="demo-title">Icon 组件</h1>
+        <h1 className="demo-title">Icon 图标</h1>
         <div className="demo-description">
           Icon 图标
         </div>
@@ -80,3 +80,5 @@ export default class Index extends Component {
     );
   }
 }
+
+export default Index;
