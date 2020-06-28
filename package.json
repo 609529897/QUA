@@ -10,7 +10,7 @@
     "node-sass": "^4.14.1",
     "prism-react-renderer": "^1.1.1",
     "prop-types": "^15.7.2",
-    "rc-align": "^4.0.1",
+    "rc-align": "2.4.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-onclickoutside": "^6.9.0",
