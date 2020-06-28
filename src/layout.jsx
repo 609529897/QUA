@@ -9,6 +9,7 @@ const PlaceboDemo = lazy(() => import("./placebo"));
 const IconDemo = lazy(() => import("./icon"));
 const ButtonDemo = lazy(() => import("./button"));
 const SwitchDemo = lazy(() => import("./switch"));
+const DropdownDemo = lazy(() => import("./dropdown"));
 
 class Layout extends Component {
   constructor(props) {
@@ -46,7 +47,7 @@ class Layout extends Component {
               <span className="nav-icon">
                 <Icon type="right" />
               </span>
-              QuaStore 通信
+              QuaStore
             </NavLink>
           </div>
           <div className="nav-item">
@@ -59,7 +60,7 @@ class Layout extends Component {
               <span className="nav-icon">
                 <Icon type="right" />
               </span>
-              Lazyimg 懒加载
+              Lazyimg
             </NavLink>
           </div>
           <div className="nav-item">
@@ -72,7 +73,7 @@ class Layout extends Component {
               <span className="nav-icon">
                 <Icon type="right" />
               </span>
-              Placebo 安慰剂
+              Placebo
             </NavLink>
           </div>
           <div className="nav-item">
@@ -85,7 +86,7 @@ class Layout extends Component {
               <span className="nav-icon">
                 <Icon type="right" />
               </span>
-              Icon 图标
+              Icon
             </NavLink>
           </div>
           <div className="nav-item">
@@ -98,7 +99,7 @@ class Layout extends Component {
               <span className="nav-icon">
                 <Icon type="right" />
               </span>
-              Button 按钮
+              Button
             </NavLink>
           </div>
           <div className="nav-item">
@@ -111,7 +112,20 @@ class Layout extends Component {
               <span className="nav-icon">
                 <Icon type="right" />
               </span>
-              Switch 开关
+              Switch
+            </NavLink>
+          </div>
+          <div className="nav-item">
+            <NavLink
+              to="/dropdown"
+              className="nav-link"
+              activeClassName="nav-link--active"
+              exact
+            >
+              <span className="nav-icon">
+                <Icon type="right" />
+              </span>
+              Dropdown
             </NavLink>
           </div>
         </div>
@@ -124,6 +138,7 @@ class Layout extends Component {
             <Route path="/icon" component={IconDemo} />
             <Route path="/button" component={ButtonDemo} />
             <Route path="/switch" component={SwitchDemo} />
+            <Route path="/dropdown" component={DropdownDemo} />
           </Suspense>
         </div>
       </div>

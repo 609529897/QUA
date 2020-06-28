@@ -1,4 +1,4 @@
-@keyframes cooDropdownSlideUpIn {
+@keyframes quaDropdownSlideUpIn {
     0% {
         opacity: 0;
         transform: scaleY(0);
@@ -8,7 +8,7 @@
         transform: scaleY(1);
     }
 }
-@keyframes cooDropdownSlideUpOut {
+@keyframes quaDropdownSlideUpOut {
     0% {
         opacity: 1;
         transform: scaleY(1);
@@ -19,7 +19,7 @@
     }
 }
 
-@keyframes cooFadeIn {
+@keyframes quaFadeIn {
     0%{
         opacity: 0;
     }
@@ -28,7 +28,7 @@
     }
 }
 
-@keyframes cooScaleIn {
+@keyframes quaScaleIn {
     0%{
         opacity: 0;
         transform: scale(.8);
@@ -40,7 +40,7 @@
 }
 
 // 上方位：进
-@keyframes cooSlideTopIn {
+@keyframes quaSlideTopIn {
     0% {
         transform: translateY(-100%);
     }
@@ -51,7 +51,7 @@
 }
 
 // 上方位：出
-@keyframes cooSlideTopOut {
+@keyframes quaSlideTopOut {
     0% {
         transform: translateY(0%);
     }
@@ -62,7 +62,7 @@
 }
 
 // 右方位：进
-@keyframes cooSlideRightIn {
+@keyframes quaSlideRightIn {
     0% {
         transform: translateX(100%);
     }
@@ -73,7 +73,7 @@
 }
 
 // 右方位：出
-@keyframes cooSlideRightOut {
+@keyframes quaSlideRightOut {
     0% {
         transform: none;
     }
@@ -84,7 +84,7 @@
 }
 
 // 下方位：进
-@keyframes cooSlideBottomIn {
+@keyframes quaSlideBottomIn {
     0% {
         transform: translateY(100%);
     }
@@ -95,7 +95,7 @@
 }
 
 // 下方位：出
-@keyframes cooSlideBottomOut {
+@keyframes quaSlideBottomOut {
     0% {
         transform: none;
     }
@@ -106,7 +106,7 @@
 }
 
 // 左方位：进
-@keyframes cooSlideLeftIn {
+@keyframes quaSlideLeftIn {
     0% {
         transform: translateX(-100%);
     }
@@ -117,7 +117,7 @@
 }
 
 // 左方位：出
-@keyframes cooSlideLeftOut {
+@keyframes quaSlideLeftOut {
     0% {
         transform: none;
     }

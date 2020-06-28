@@ -1,4 +1,4 @@
-.cooDropdown{
+.quaDropdown{
     display: inline-block;
     position: relative;
     &-menu{
@@ -13,7 +13,7 @@
         animation-duration: .5s;
         animation-fill-mode: both;
         animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
-        animation-name: cooDropdownSlideUpIn;
+        animation-name: quaDropdownSlideUpIn;
         &--hidden{
             display: none;
         }
@@ -40,7 +40,7 @@
         animation-duration: .5s;
         animation-fill-mode: both;
         animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
-        animation-name: cooDropdownSlideUpIn;
+        animation-name: quaDropdownSlideUpIn;
     }
 
     &-exit{
@@ -48,6 +48,6 @@
         animation-fill-mode: both;
         opacity: 1;
         animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
-        animation-name: cooDropdownSlideUpOut;
+        animation-name: quaDropdownSlideUpOut;
     }
 }

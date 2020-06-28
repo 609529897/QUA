@@ -1,4 +1,4 @@
-.cooFade{
+.quaFade{
     &-enter{
         opacity: 0;
         &-active{
@@ -13,7 +13,7 @@
     }
 }
 
-.cooScale{
+.quaScale{
     &-enter{
         opacity: 0;
         transform: scale(.8);
@@ -32,7 +32,7 @@
     }
 }
 
-.cooSlideTop{
+.quaSlideTop{
     &-enter{
         transform: translateY(-100%);
         &-active{
@@ -47,7 +47,7 @@
     }
 }
 
-.cooSlideBottom{
+.quaSlideBottom{
     &-enter{
         transform: translateY(100%);
         &-active{
@@ -62,7 +62,7 @@
     }
 }
 
-.cooSlideRight{
+.quaSlideRight{
     &-enter{
         transform: translateX(100%);
         &-active{
@@ -77,7 +77,7 @@
     }
 }
 
-.cooSlideLeft{
+.quaSlideLeft{
     &-enter{
         transform: translateX(-100%);
         &-active{
