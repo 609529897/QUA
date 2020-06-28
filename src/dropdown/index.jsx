@@ -14,7 +14,7 @@ class Index extends Component {
       <div className="demo demo--dropdown">
         <h1 className="demo-title">Dropdown 下拉块组件</h1>
         <div className="demo-description">
-          <p style={{ color: "red" }}>debug 中...</p>
+          Dropdown 下拉块
         </div>
         <div className="panel">
           <h2 className="panel-title">演示</h2>
