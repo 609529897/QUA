@@ -7,17 +7,17 @@ class Index extends Component {
     this.state = {
       count: 0,
     };
-  }
+  };
 
   componentDidMount() {
     this.unsubscribe = QuaStore.subscribe("level2_3", this.setCount.bind(this));
-  }
+  };
 
   componentWillUnmount() {
     console.log(this.unsubscribe());
     console.log(555);
     this.unsubscribe();
-  }
+  };
 
   setCount() {
     this.setState((prevState) => {
@@ -25,7 +25,7 @@ class Index extends Component {
         count: prevState.count + 1,
       };
     });
-  }
+  };
 
   render() {
     console.log("update render 第二层：2-3");
@@ -38,6 +38,6 @@ class Index extends Component {
       </div>
     );
   }
-}
+};
 
 export default Index;
