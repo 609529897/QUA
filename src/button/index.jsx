@@ -12,7 +12,7 @@ class Index extends Component {
   render() {
     return (
       <div className="demo demo--button">
-        <h1 className="demo-title">Button按钮</h1>
+        <h1 className="demo-title">Button 按钮组件</h1>
         <div className="demo-description">
           Button 按钮
         </div>

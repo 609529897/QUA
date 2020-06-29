@@ -8,7 +8,7 @@ const styles = {
     maxWidth: "45vw",
     lineHeight: "1.3rem",
     boxSizing: "border-box",
-    fontFamily: '"Dank Mono", "Fira Code", monospace',
+    fontFamily: 'Consolas, "Fira Code", monospace',
     ...theme.plain
   }
 };

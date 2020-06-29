@@ -1,11 +1,11 @@
-.cooToast{
+.quaToast{
     display: block;
     padding: 0px 30px;
     margin-bottom: 20px;
     right: 50%;
     position: relative;
     transition: opacity .5s ease, transform .5s ease;
-    animation: cooScaleIn .5s ease;
+    animation: quaScaleIn .5s ease;
     background-color: rgba(0, 0, 0, .6);
     border-radius: $borderRadius;
     border-style: solid;
@@ -22,7 +22,7 @@
         text-align: center;
         padding: 20px;
         box-sizing: border-box;
-        .cooIcon{
+        .quaIcon{
             font-size: 25px;
         }
     }

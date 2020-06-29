@@ -112,9 +112,9 @@ class Index extends Component {
         <div className="panel">
           <h2 className="panel-title">属性</h2>
           <div className="panel-content">
-            <p>Dropdown.Menu: 实现下拉功能的元素</p>
+            <p>Dropdown.Menu：实现下拉功能的元素</p>
             <br />
-            <p>Dropdown.Content: 下拉块里的内容</p>
+            <p>Dropdown.Content：下拉块里的内容</p>
           </div>
         </div>
       </div>

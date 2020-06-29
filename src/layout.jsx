@@ -10,6 +10,7 @@ const IconDemo = lazy(() => import("./icon"));
 const ButtonDemo = lazy(() => import("./button"));
 const SwitchDemo = lazy(() => import("./switch"));
 const DropdownDemo = lazy(() => import("./dropdown"));
+const ToastDemo = lazy(() => import("./toast"));
 
 class Layout extends Component {
   constructor(props) {
@@ -128,6 +129,19 @@ class Layout extends Component {
               Dropdown
             </NavLink>
           </div>
+          <div className="nav-item">
+            <NavLink
+              to="/toast"
+              className="nav-link"
+              activeClassName="nav-link--active"
+              exact
+            >
+              <span className="nav-icon">
+                <Icon type="right" />
+              </span>
+              Toast
+            </NavLink>
+          </div>
         </div>
         <div className="content">
           <Suspense fallback={<div className="loading">Loading...</div>}>
@@ -135,6 +149,7 @@ class Layout extends Component {
             <Route path="/quastore" component={QuaStoreDemo} />
             <Route path="/lazyimg" component={LazyimgDemo} />
             <Route path="/placebo" component={PlaceboDemo} />
+            <Route path="/toast" component={ToastDemo} />
             <Route path="/icon" component={IconDemo} />
             <Route path="/button" component={ButtonDemo} />
             <Route path="/switch" component={SwitchDemo} />

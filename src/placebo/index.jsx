@@ -71,7 +71,7 @@ class Index extends Component {
           <h2 className="panel-title">属性</h2>
           <div className="panel-content">
             <p>
-              <strong>fillColor</strong>
+              <strong>fillColor </strong>
               给 open 函数传递一个对象，对象属性 fillColor 代表安慰剂颜色。默认颜色是蓝色！
             </p>
           </div>
