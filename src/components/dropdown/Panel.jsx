@@ -1,7 +1,5 @@
-import React, {Component} from 'react';
+import {Component} from 'react';
 import ReactDom from 'react-dom';
-import propTypes from 'prop-types';
-import className from 'classnames';
 import onClickOutside from 'react-onclickoutside';
 
 class Panel extends Component {

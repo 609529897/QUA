@@ -1,6 +1,4 @@
-import React, {Component} from 'react';
-import propTypes from 'prop-types';
-import className from 'classnames';
+import {Component} from 'react';
 
 class Menu extends Component {
 

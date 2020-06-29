@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./index.scss";
 import Code from "../code";
-import Level1_1 from "./level1_1";
-import Level1_2 from "./level1_2";
-import Level2_1 from "./level2_1";
-import Level2_2 from "./level2_2";
-import Level2_3 from "./level2_3";
+import Level11 from "./level1_1";
+import Level12 from "./level1_2";
+import Level21 from "./level2_1";
+import Level22 from "./level2_2";
+import Level23 from "./level2_3";
 
 class Index extends Component {
   constructor(props) {
@@ -34,19 +34,19 @@ class Index extends Component {
           <h2 className="panel-title">演示</h2>
           <div className="panel-content">
             <div className="panel-line">
-              <Level1_1>
-                <Level2_1>
-                </Level2_1>
-              </Level1_1>
+              <Level11>
+                <Level21>
+                </Level21>
+              </Level11>
             </div>
 
             <div className="panel-line">
-              <Level1_2>
-                <Level2_2>
-                </Level2_2>
-                <Level2_3>
-                </Level2_3>
-              </Level1_2>
+              <Level12>
+                <Level22>
+                </Level22>
+                <Level23>
+                </Level23>
+              </Level12>
             </div>
           </div>
         </div>
