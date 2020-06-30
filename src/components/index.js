@@ -1,9 +1,9 @@
-import './styles/index.scss';
-export { default as QuaStore} from './quaStore';
-export { default as Lazyimg } from './lazyimg';
-export { default as Placebo} from './placebo';
-export { default as Icon } from './icon';
-export { default as Button} from './button';
-export { default as Switch } from './switch';
-export { default as Dropdown } from './dropdown';
-export {default as Toast} from './toast';
+import './styles/index.scss'
+export { default as QuaStore} from './quaStore'
+export { default as Lazyimg } from './lazyimg'
+export { default as Placebo} from './placebo'
+export { default as Icon } from './icon'
+export { default as Button} from './button'
+export { default as Switch } from './switch'
+export { default as Dropdown } from './dropdown'
+export {default as Toast} from './toast'

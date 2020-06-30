@@ -1,19 +1,19 @@
-import React, { Component } from "react";
-import "./index.scss";
-import Code from "../code";
-import { Lazyimg, Button } from "../components";
-import staticImg from '../images/static.webp';
-import interchangeImg from '../images/interchange.gif';
+import React, { Component } from "react"
+import "./index.scss"
+import Code from "../code"
+import { Lazyimg, Button } from "../components"
+import staticImg from '../images/static.webp'
+import interchangeImg from '../images/interchange.gif'
 import clearImg from '../images/clear.webp'
 import fuzzyImg from '../images/fuzzy.webp'
 
 class Index extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       auto01: false,
       auto02: false,
-    };
+    }
   }
   render() {
     return (
@@ -62,7 +62,7 @@ class Index extends Component {
               onClick={() => {
                 this.setState({
                   auto01: true,
-                });
+                })
               }}
             >
               加载第一张
@@ -71,7 +71,7 @@ class Index extends Component {
               onClick={() => {
                 this.setState({
                   auto02: true,
-                });
+                })
               }}
             >
               加载第二张(失效的图片)
@@ -112,8 +112,8 @@ class Index extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
-};
+}
 
-export default  Index;
+export default  Index

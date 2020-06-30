@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import "./index.scss";
-import Code from "../code";
-import { Placebo, Button } from "../components";
+import React, { Component } from "react"
+import "./index.scss"
+import Code from "../code"
+import { Placebo, Button } from "../components"
 
 class Index extends Component {
   constructor(props) {
-    super(props);
-    this.state = {};
+    super(props)
+    this.state = {}
   }
 
   render() {
@@ -23,20 +23,20 @@ class Index extends Component {
               <Button
                 type="danger"
                 onClick={() => {
-                  Placebo.open({ fillColor: "255, 0, 0" });
+                  Placebo.open({ fillColor: "255, 0, 0" })
                   setTimeout(() => {
-                    Placebo.close();
-                  }, 3000);
+                    Placebo.close()
+                  }, 3000)
                 }}
               >
                 3秒钟红色的安慰
               </Button>
               <Button
                 onClick={() => {
-                  Placebo.open();
+                  Placebo.open()
                   setTimeout(() => {
-                    Placebo.close();
-                  }, 5000);
+                    Placebo.close()
+                  }, 5000)
                 }}
               >
                 5秒钟蓝色的安慰
@@ -77,8 +77,8 @@ class Index extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
-};
+}
 
-export default Index;
+export default Index

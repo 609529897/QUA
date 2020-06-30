@@ -1,7 +1,7 @@
-import {Component} from 'react';
+import {Component} from 'react'
 
 class Content extends Component {
 
 }
 
-export default Content;
+export default Content

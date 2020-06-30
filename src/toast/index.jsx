@@ -1,30 +1,30 @@
-import React, { Component } from "react";
-import "./index.scss";
-import Code from "../code";
-import { Button, Toast } from "../components";
+import React, { Component } from "react"
+import "./index.scss"
+import Code from "../code"
+import { Button, Toast } from "../components"
 
 class Index extends Component {
   constructor(props) {
-    super(props);
-    this.state = {};
+    super(props)
+    this.state = {}
   }
 
   componentWillUnmount() {
-    this.onCloseLoading();
+    this.onCloseLoading()
   }
 
   onShowLoading() {
     if (this.loadingRef) {
-      return;
+      return
     }
     Toast.loading("加载中...", { duration: 0 }, (loadingRef) => {
-      this.loadingRef = loadingRef;
-    });
+      this.loadingRef = loadingRef
+    })
   }
 
   onCloseLoading() {
-    this.loadingRef && this.loadingRef.close();
-    this.loadingRef = null;
+    this.loadingRef && this.loadingRef.close()
+    this.loadingRef = null
   }
 
   render() {
@@ -40,14 +40,14 @@ class Index extends Component {
             <div className="panel-line">
               <Button
                 onClick={() => {
-                  Toast.tip("打开提示框");
+                  Toast.tip("打开提示框")
                 }}
               >
                 Toast.tip
               </Button>
               <Button
                 onClick={() => {
-                  Toast.tip("打开提示框", { closable: true });
+                  Toast.tip("打开提示框", { closable: true })
                 }}
               >
                 closable
@@ -58,19 +58,19 @@ class Index extends Component {
               <Button
                 onClick={() => {
                   if (this.loadingRef) {
-                    return;
+                    return
                   }
                   Toast.loading("加载中...", { duration: 0 }, (loadingRef) => {
-                    this.loadingRef = loadingRef;
-                  });
+                    this.loadingRef = loadingRef
+                  })
                 }}
               >
                 Toast.loading
               </Button>
               <Button
                 onClick={() => {
-                  this.loadingRef && this.loadingRef.close();
-                  this.loadingRef = null;
+                  this.loadingRef && this.loadingRef.close()
+                  this.loadingRef = null
                 }}
               >
                 close loading
@@ -85,7 +85,7 @@ class Index extends Component {
             <Code>
               {`// Tip提示框
 <Button onClick={() => {
-    Toast.tip('打开提示框', {closable: true});
+    Toast.tip('打开提示框', {closable: true})
 }}>可关闭</Button>
 // loading加载框
 <Button onClick={this.onShowLoading.bind(this)}>Toast.loading</Button>
@@ -115,8 +115,8 @@ class Index extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Index;
+export default Index

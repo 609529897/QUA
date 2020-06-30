@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import "./index.scss";
-import Code from "../code";
-import { Switch } from "../components";
+import React, { Component } from "react"
+import "./index.scss"
+import Code from "../code"
+import { Switch } from "../components"
 
 class index extends Component {
   constructor(props) {
-    super(props);
-    this.state = {};
+    super(props)
+    this.state = {}
   }
   render() {
     return (
@@ -71,8 +71,8 @@ class index extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default index;
+export default index

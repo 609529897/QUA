@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import { QuaStore, Button } from "../../components";
+import React, { Component } from "react"
+import { QuaStore, Button } from "../../components"
 
 class Index extends Component {
   constructor(props) {
-    super(props);
-    this.state = {};
+    super(props)
+    this.state = {}
   }
   notifyLevel2_2() {
-    QuaStore.notify("level2_2");
+    QuaStore.notify("level2_2")
   }
 
   notifyLevel2_3() {
-    QuaStore.notify("level2_3");
+    QuaStore.notify("level2_3")
   }
 
   render() {
@@ -29,8 +29,8 @@ class Index extends Component {
           通知【第二层:2-3】数据变化了
         </Button>
       </div>
-    );
+    )
   }
 }
 
-export default Index;
+export default Index

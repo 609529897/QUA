@@ -1,26 +1,26 @@
-import React, { Component } from "react";
-import "./index.scss";
-import Code from "../code";
-import Level11 from "./level1_1";
-import Level12 from "./level1_2";
-import Level21 from "./level2_1";
-import Level22 from "./level2_2";
-import Level23 from "./level2_3";
+import React, { Component } from "react"
+import "./index.scss"
+import Code from "../code"
+import Level11 from "./level1_1"
+import Level12 from "./level1_2"
+import Level21 from "./level2_1"
+import Level22 from "./level2_2"
+import Level23 from "./level2_3"
 
 class Index extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       placement: "right",
       visible: false,
-    };
+    }
   }
 
   onOpen(placement) {
     this.setState({
       placement: placement,
       visible: true,
-    });
+    })
   }
 
   render() {
@@ -82,8 +82,8 @@ componentWillUnmount () {
           </div>
         </div>
       </div>
-    );
+    )
   }
-};
+}
 
-export default Index;
+export default Index

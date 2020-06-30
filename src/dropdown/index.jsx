@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import "./index.scss";
-import Code from "../code";
-import { Dropdown, Button, Icon } from "../components";
+import React, { Component } from "react"
+import "./index.scss"
+import Code from "../code"
+import { Dropdown, Button, Icon } from "../components"
 
 class Index extends Component {
   constructor(props) {
-    super(props);
-    this.state = {};
+    super(props)
+    this.state = {}
   }
 
   render() {
@@ -118,8 +118,8 @@ class Index extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Index;
+export default Index

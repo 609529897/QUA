@@ -1,2 +1,2 @@
-import Lazyimg from './Lazyimg';
-export default Lazyimg;
+import Lazyimg from './Lazyimg'
+export default Lazyimg

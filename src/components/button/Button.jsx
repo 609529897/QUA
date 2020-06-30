@@ -1,24 +1,24 @@
-import React, { Component } from "react";
-import propTypes from "prop-types";
-import className from "classnames";
-import Icon from "../icon";
+import React, { Component } from "react"
+import propTypes from "prop-types"
+import className from "classnames"
+import Icon from "../icon"
 
 export default class Button extends Component {
   constructor(props) {
-    super(props);
-    this.state = {};
+    super(props)
+    this.state = {}
   }
 
   onClick() {
-    const props = this.props;
+    const props = this.props
     if ("onClick" in props) {
-      props.onClick();
+      props.onClick()
     }
   }
 
   render() {
-    const props = this.props;
-    const prefixCls = "quaButton";
+    const props = this.props
+    const prefixCls = "quaButton"
     const buttonClassName = className({
       [prefixCls]: true,
       [`${prefixCls}--${props.type}`]: true,
@@ -28,14 +28,14 @@ export default class Button extends Component {
       [`${prefixCls}--fill`]: props.fill,
       [`${prefixCls}--loading`]: props.loading,
       [props.className]: true,
-    });
+    })
 
     return (
       <button className={buttonClassName} onClick={this.onClick.bind(this)}>
         {props.loading ? (<Icon type="loading" />) : null}
         {this.props.children}
       </button>
-    );
+    )
   }
 }
 
@@ -47,7 +47,7 @@ Button.defaultProps = {
   fill: false,
   loading: false,
   className: "",
-};
+}
 
 Button.propTypes = {
   size: propTypes.oneOf(["small", "large", "default"]),
@@ -59,4 +59,4 @@ Button.propTypes = {
   icon: propTypes.string,
   loading: propTypes.bool,
   className: propTypes.string,
-};
+}

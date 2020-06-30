@@ -1,44 +1,44 @@
-import React, { Component } from "react";
-import propTypes from "prop-types";
-import Content from "./Content";
+import React, { Component } from "react"
+import propTypes from "prop-types"
+import Content from "./Content"
 
 class Toast extends Component {
   constructor(props) {
-    super(props);
-    this.uuid = 0;
+    super(props)
+    this.uuid = 0
     this.state = {
       toasts: [],
-    };
+    }
   }
   add(toast) {
-    this.uuid++;
+    this.uuid++
     this.setState((prevState) => {
       return {
         toasts: [...prevState.toasts, { ...toast, id: this.uuid }],
-      };
-    });
+      }
+    })
   }
 
   remove(id) {
     const findIndexByKey = (id) => {
-      let findIndex;
+      let findIndex
       this.state.toasts.map((item, index) =>
         item.id === id ? findIndex = index : null
-      );
-      return findIndex;
-    };
+      )
+      return findIndex
+    }
 
-    const index = findIndexByKey(id);
+    const index = findIndexByKey(id)
     this.setState((prevState) => {
-      prevState.toasts.splice(index, 1);
+      prevState.toasts.splice(index, 1)
       return {
         toasts: [...prevState.toasts],
-      };
-    });
+      }
+    })
   }
 
   render() {
-    const state = this.state;
+    const state = this.state
 
     return (
       <React.Fragment>
@@ -55,20 +55,20 @@ class Toast extends Component {
             >
               {item.content}
             </Content>
-          );
+          )
         })}
       </React.Fragment>
-    );
+    )
   }
 }
 
 Toast.defaultProps = {
   duration: 3000,
   type: "tip",
-};
+}
 
 Toast.propTypes = {
   duration: propTypes.number,
-};
+}
 
-export default Toast;
+export default Toast

@@ -1,44 +1,44 @@
-import React, { Component } from "react";
-import className from "classnames";
-import { CSSTransition } from "react-transition-group";
-import Icon from "../icon";
+import React, { Component } from "react"
+import className from "classnames"
+import { CSSTransition } from "react-transition-group"
+import Icon from "../icon"
 
 class Content extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       visible: true,
-    };
+    }
   }
 
   componentDidMount() {
-    const props = this.props;
+    const props = this.props
     if (props.duration <= 0) {
-      return false;
+      return false
     }
 
     this.timeout = setTimeout(() => {
-      this.close();
-    }, props.duration);
+      this.close()
+    }, props.duration)
   }
 
   onExited() {
-    const props = this.props;
-    props.onRemove(props.id);
+    const props = this.props
+    props.onRemove(props.id)
   }
 
   close() {
     this.setState({
       visible: false,
-    });
+    })
     if (this.timeout) {
-      clearTimeout(this.timeout);
-      this.timeout = null;
+      clearTimeout(this.timeout)
+      this.timeout = null
     }
   }
 
   renderTip() {
-    const props = this.props;
+    const props = this.props
     return (
       <div className={className({ "quaToast": true, "quaToast--tip": true })}>
         {props.children}
@@ -53,11 +53,11 @@ class Content extends Component {
           )
           : null}
       </div>
-    );
+    )
   }
 
   renderLoading() {
-    const props = this.props;
+    const props = this.props
     return (
       <div
         className={className({ "quaToast": true, "quaToast--loading": true })}
@@ -81,12 +81,12 @@ class Content extends Component {
           )
           : null}
       </div>
-    );
+    )
   }
 
   render() {
-    const props = this.props;
-    const state = this.state;
+    const props = this.props
+    const state = this.state
 
     return (
       <CSSTransition
@@ -97,8 +97,8 @@ class Content extends Component {
       >
         {props.type === "tip" ? this.renderTip() : this.renderLoading()}
       </CSSTransition>
-    );
+    )
   }
 }
 
-export default Content;
+export default Content

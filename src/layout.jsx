@@ -1,21 +1,21 @@
-import React, { Component, lazy, Suspense } from "react";
-import { Route, NavLink } from "react-router-dom";
-import { Icon } from "./components";
+import React, { Component, lazy, Suspense } from "react"
+import { Route, NavLink } from "react-router-dom"
+import { Icon } from "./components"
 
-import Home from "./home";
-const QuaStoreDemo = lazy(() => import("./quaStore"));
-const LazyimgDemo = lazy(() => import("./lazyimg"));
-const PlaceboDemo = lazy(() => import("./placebo"));
-const IconDemo = lazy(() => import("./icon"));
-const ButtonDemo = lazy(() => import("./button"));
-const SwitchDemo = lazy(() => import("./switch"));
-const DropdownDemo = lazy(() => import("./dropdown"));
-const ToastDemo = lazy(() => import("./toast"));
+import Home from "./home"
+const QuaStoreDemo = lazy(() => import("./quaStore"))
+const LazyimgDemo = lazy(() => import("./lazyimg"))
+const PlaceboDemo = lazy(() => import("./placebo"))
+const IconDemo = lazy(() => import("./icon"))
+const ButtonDemo = lazy(() => import("./button"))
+const SwitchDemo = lazy(() => import("./switch"))
+const DropdownDemo = lazy(() => import("./dropdown"))
+const ToastDemo = lazy(() => import("./toast"))
 
 class Layout extends Component {
   constructor(props) {
-    super(props);
-    this.state = {};
+    super(props)
+    this.state = {}
   }
 
   render() {
@@ -157,8 +157,8 @@ class Layout extends Component {
           </Suspense>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Layout;
+export default Layout

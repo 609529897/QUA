@@ -1,7 +1,7 @@
-import {Component} from 'react';
+import {Component} from 'react'
 
 class Menu extends Component {
 
 }
 
-export default Menu;
+export default Menu

@@ -1,10 +1,10 @@
-import "./index.scss";
-import React, { Component } from "react";
+import "./index.scss"
+import React, { Component } from "react"
 
 class Index extends Component {
   constructor(props) {
-    super(props);
-    this.state = {};
+    super(props)
+    this.state = {}
   }
   render() {
     return (
@@ -44,8 +44,8 @@ class Index extends Component {
           </h4>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Index;
+export default Index
