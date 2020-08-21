@@ -6,6 +6,7 @@ let observer = function () {
       listeners[name] = []
     }
     listeners[name].push(listener)
+    // 取消事件
     return () => {
         const index = listeners[name].indexOf(listener)
         listeners[name].splice(index, 1)

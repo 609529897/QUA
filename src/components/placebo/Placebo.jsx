@@ -12,6 +12,7 @@ class Placebo extends Component {
       fillColor: props.fillColor,
     }
   }
+  // 接收用户设定的颜色到 state
   open({ fillColor }) {
     this.setState({
       fillColor,
@@ -19,13 +20,13 @@ class Placebo extends Component {
       hidden: false,
     })
   }
-
+  // 关闭动画
   close() {
     this.setState({
       open: false,
     })
   }
-
+  // 动画结束后关闭安慰剂
   onExited() {
     this.setState({
       hidden: true,
@@ -34,6 +35,7 @@ class Placebo extends Component {
 
   render() {
     const state = this.state
+    // 变化颜色
     const progressStyle = {
       backgroundColor: `rgba(${state.fillColor} , 1)`,
     }
